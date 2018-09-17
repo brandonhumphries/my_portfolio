@@ -41,18 +41,18 @@ const projects = [
 
 const gardenImages = [
     {caption: 'Zucchini', url: 'img/garden_photos/zucchini.jpg'},
-    {caption: 'Tomatoes', url: 'img/garden_photos/tomatoessquare.jpg'},
-    {caption: 'Squash', url: 'img/garden_photos/squashsquare.jpg'},
-    {caption: 'Eggplant', url: 'img/garden_photos/eggplantsquare.jpg'},
-    {caption: 'Cantaloupe', url: 'img/garden_photos/cantaloupesquare.jpg'},
-    {caption: 'Cucumber', url: 'img/garden_photos/cucumber1square.jpg'},
-    {caption: 'Cucumber', url: 'img/garden_photos/cucumber2square.jpg'},
-    {caption: 'Mini Bell Peppers', url: 'img/garden_photos/minibellpepperssquare.jpg'},
-    {caption: 'Jalapeno', url: 'img/garden_photos/jalapenosquare.jpg'},
-    {caption: 'Okra', url: 'img/garden_photos/okrasquare.jpg'},
-    {caption: 'Watermelon', url: 'img/garden_photos/watermelon1square.jpg'},
-    {caption: 'Watermelon', url: 'img/garden_photos/watermelon2square.jpg'},
-    {caption: 'Vegetable Harvest', url: 'img/garden_photos/vegetableharvestsquare.jpg'}
+    {caption: 'Tomatoes', url: 'img/garden_photos/tomatoes.jpg'},
+    {caption: 'Squash', url: 'img/garden_photos/squash.jpg'},
+    {caption: 'Eggplant', url: 'img/garden_photos/eggplant.jpg'},
+    {caption: 'Cantaloupe', url: 'img/garden_photos/cantaloupe.jpg'},
+    {caption: 'Cucumber', url: 'img/garden_photos/cucumber1.jpg'},
+    {caption: 'Cucumber', url: 'img/garden_photos/cucumber2.jpg'},
+    {caption: 'Mini Bell Peppers', url: 'img/garden_photos/minibellpeppers.jpg'},
+    {caption: 'Jalapeno', url: 'img/garden_photos/jalapeno.jpg'},
+    {caption: 'Okra', url: 'img/garden_photos/okra.jpg'},
+    {caption: 'Watermelon', url: 'img/garden_photos/watermelon1.jpg'},
+    {caption: 'Watermelon', url: 'img/garden_photos/watermelon2.jpg'},
+    {caption: 'Vegetable Harvest', url: 'img/garden_photos/vegetableharvest.jpg'}
 ];
 
 let projectI;
