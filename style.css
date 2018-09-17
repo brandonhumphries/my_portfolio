@@ -25,7 +25,7 @@ img {
     border-style: solid;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 0.4em .9em;
+    padding: 0.4em;
     margin: 0.3em 0.5em;
     width: 6.3em;
     height: 2.5em;
@@ -67,7 +67,7 @@ img {
 }
 .name-header {
     color: rgb(102, 100, 100); 
-    padding: 0.25em 1em 0 1em;
+    padding: 0.25em 0.25em 0 0.5em;
     margin: 0;
     /* margin: 0.25em 0 0 0; */
     /* color: rgb(99, 126, 167) */
@@ -78,7 +78,7 @@ img {
     font-style: oblique;
     font-weight: lighter;
     margin: 0 0 0.5em 0;
-    padding-left: 2em;
+    padding-left: 1.5em;
 }
 .about-me-container {
     padding: 0 1em;
