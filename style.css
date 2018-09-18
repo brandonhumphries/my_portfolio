@@ -356,8 +356,25 @@ img {
         justify-content: space-around;
     }
     .project-modal-container {
-        left: 32.5%;
-        width: 35%;
+        /* left: 32.5%;
+        width: 35%; */
+        width: 80%;
+        height: 80%;
+        left: 10%;
+        top: 10%;
+    }
+    .project-header-modal {
+        font-size: 2em;
+    }
+    .project-image-information-container-modal {
+        display: flex;
+    }
+    .project-image-modal {
+        width: 50%;
+        padding: 0 1em;
+    }
+    .project-information-container-modal {
+        width: 50%;
     }
     /* .technology-icon {
         width: 3em;

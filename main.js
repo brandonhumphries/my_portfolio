@@ -128,7 +128,7 @@ let createAnchor = (className, hrefContent, anchorContent) => {
     let anchor = document.createElement('a');
     anchor.setAttribute('href', hrefContent);
     anchor.setAttribute('target', '_blank');
-    // anchor.setAttribute('rel', 'noopener noreferrer');
+    anchor.setAttribute('rel', 'noopener noreferrer');
     anchor.classList.add(className);
     anchor.textContent = anchorContent;
     return anchor;
@@ -146,11 +146,11 @@ let createDetailsList = (details) => {
 };
 
 let displayProjectTechnologies = (i) => {
-    let projectItem = document.querySelector('.project-item-modal');
+    let projectInformationContainer = document.querySelector('.project-information-container-modal');
     let projectTechnologiesContainer = document.createElement('div');
     projectTechnologiesContainer.classList.add('project-technologies-container');
     let projectTechnologiesHeader = createHeader('h4', 'project-technologies-header', 'Built with');
-    projectItem.appendChild(projectTechnologiesHeader);
+    projectInformationContainer.appendChild(projectTechnologiesHeader);
     let currentProject = projects[i].projectTechnologies;
     currentProject.forEach(technology => {
         let technologyItem = document.createElement('div');
@@ -160,7 +160,7 @@ let displayProjectTechnologies = (i) => {
         technologyItem.appendChild(technologyIcon);
         technologyItem.appendChild(technologyCaption);
         projectTechnologiesContainer.appendChild(technologyItem);
-        projectItem.appendChild(projectTechnologiesContainer);
+        projectInformationContainer.appendChild(projectTechnologiesContainer);
     });
 };
 
@@ -169,9 +169,13 @@ let displayProject = (i) => {
     let projectModalBackground = document.querySelector('.project-modal-background');
     let projectItemContainer = document.createElement('div');
     projectItemContainer.classList.add('project-item-container-modal');
+    let projectImageInformationContainer =document.createElement('div');
+    projectImageInformationContainer.classList.add('project-image-information-container-modal');
     let projectItem = document.createElement('div');
     projectItem.classList.add('project-item-modal');
     let projectHeader = createHeader('h3', 'project-header-modal', projects[i].caption);
+    let projectInformationContainer = document.createElement('div');
+    projectInformationContainer.classList.add('project-information-container-modal');
     let urlContainer = document.createElement('div');
     urlContainer.classList.add('url-container-modal');
     let demoUrl = createAnchor('demo-url', projects[i].demoUrl, 'Live Demo');
@@ -182,12 +186,18 @@ let displayProject = (i) => {
     projectDescription.textContent = projects[i].description;
     let projectDetailList = createDetailsList(projects[i].details);
     projectItem.appendChild(projectHeader);
-    projectItem.appendChild(projectImage);
+    projectImageInformationContainer.appendChild(projectImage);
+    projectItem.appendChild(projectImageInformationContainer);
     urlContainer.appendChild(demoUrl);
     urlContainer.appendChild(githubUrl);
-    projectItem.appendChild(urlContainer);
-    projectItem.appendChild(projectDescription);
-    projectItem.appendChild(projectDetailList);
+    projectInformationContainer.appendChild(urlContainer);
+    projectInformationContainer.appendChild(projectDescription);
+    projectInformationContainer.appendChild(projectDetailList);
+    // projectItem.appendChild(urlContainer);
+    // projectItem.appendChild(projectDescription);
+    // projectItem.appendChild(projectDetailList);
+    projectImageInformationContainer.appendChild(projectInformationContainer);
+    projectItem.appendChild(projectImageInformationContainer);
     projectModalContainer.appendChild(projectItem);
     displayProjectTechnologies(i);
     projectModalContainer.classList.remove('hidden');
