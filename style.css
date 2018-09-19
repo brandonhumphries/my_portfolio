@@ -17,15 +17,25 @@ img {
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     /* margin-top: 0.4em; */
     /* background-color: rgba(11, 127, 216, 0.523); */
     /* background-color: rgb(161, 207, 217); */
     background-color: rgb(86, 165, 172);
 }
+.navigation-cog-header-container {
+    display: flex;
+    margin-right: 0.5em;
+}
+.cog-image {
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: contain;
+}
 .navigation-header {
     color: white;
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    /* font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
     font-stretch: condensed;
     /* font-size: 2em; */
@@ -199,7 +209,7 @@ img {
     margin: 0;
     /* margin-bottom: 0.5em; */
     padding-bottom: 0.2em;
-    width: 25em;
+    width: 28em;
     border-radius: 7px;
     border-bottom-style: solid;
     text-align: center;
@@ -415,7 +425,7 @@ img {
     margin: 0;
     padding-bottom: 0.2em;
     /* width: 30em; */
-    width: 10em;
+    width: 12em;
     border-radius: 7px;
     /* border-bottom-style: solid; */
     text-align: center;
@@ -492,9 +502,9 @@ img {
         flex-direction: row;
         padding: 0.5em;
     }
-    .main-body-container {
+    /* .main-body-container {
         padding-top: 3em;
-    }
+    } */
     .profile-picture {
         width: 15em;
         height: 15em;
