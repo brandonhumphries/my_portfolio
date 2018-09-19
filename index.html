@@ -10,14 +10,17 @@
 </head>
 <body>
     <nav class="navigation-menu">
-        <div class="about-me nav-anchor">
-            <a>About Me</a>
-        </div>
-        <div class="resume nav-anchor">
-            Resume
-        </div>
-        <div class="projects nav-anchor">
-            <a>Projects</a>
+        <h1 class="navigation-header">Brandon Humphries</h1>
+        <div class="navigation-anchor-container">
+            <div class="about-me nav-anchor">
+                <a href="#testingId">About Me</a>
+            </div>
+            <div class="resume nav-anchor">
+                Resume
+            </div>
+            <div class="projects nav-anchor">
+                <a>Projects</a>
+            </div>
         </div>
     </nav>
     <div class="main-body-container">
@@ -41,9 +44,13 @@
             </div>
         </div>
         <div class="projects-section-container">
-            <h2 class="projects-header">
-                Projects
-            </h2>
+            <div class="projects-header-container">
+                <div class="projects-header-line"></div>
+                <h2 class="projects-header">
+                    Projects
+                </h2>
+                <div class="projects-header-line"></div>
+            </div>
             <div class="projects-container"></div>
         </div>
         <div class='project-modal-background hidden'></div>
@@ -52,27 +59,50 @@
             <!-- <div class="project-item-container"></div> -->
         </div>
         <div class="technologies-section-container">
-            <h3 class="technologies-header">
-                Experience with these technologies:
-            </h3>
+            <div class="technologies-header-container">
+                <div class="technologies-header-line"></div>
+                <h2 class="technologies-header">
+                    Experience with these technologies
+                </h2>
+                <div class="technologies-header-line"></div>
+            </div>
             <div class="technologies-container"></div>
             <!-- <img src="img/technologies_icons/javascript-plain.svg" />
             <img src="img/technologies_icons/javascript.svg" /> -->
         </div>
-        <footer class="footer">
-            <div class="icon-group-container">
-                <div class="icon-container">
-                    <a href="https://github.com/brandonhumphries" target="_blank" rel="noopener noreferrer">
-                        <img src="img/github.svg" alt="GitHub" class="github-icon">
-                    </a>
+        <footer class="footer" id="testingId">
+            <div class="contact-information-container">
+                <div class="contact-header-container">
+                    <!-- <div class="contact-header-line"></div> -->
+                    <h2 class="contact-header">
+                        Contact Information
+                    </h2>
+                    <!-- <div class="contact-header-line"></div> -->
                 </div>
-                <div class="icon-container">
-                    <a href="https://www.linkedin.com/in/brandon-humphries-66266365/" target="_blank" rel="noopener noreferrer">
-                        <img src="img/linkedin.svg" alt="LinkedIn" class="linkedin-icon">
+                <h1 class="name-header">Brandon Humphries</h1>
+                <h2 class="developer-header">Software Developer</h2>
+                <div class="icon-group-container">
+                    <a class="github-anchor-container" href="https://github.com/brandonhumphries" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-container">
+                            <!-- <a href="https://github.com/brandonhumphries" target="_blank" rel="noopener noreferrer"> -->
+                            <img src="img/github.svg" alt="GitHub" class="github-icon">
+                            <!-- </a> -->
+                        </div>
+                        <p class="contact-anchor-title">GitHub</p>
+                        <p class="contact-anchor-url">https://github.com/brandonhumphries</p>
                     </a>
-                </div>
-                <div class="email-container">
-                    <a href="mailto:brandon.j.humphries@gmail.com">brandon.j.humphries@gmail.com</a>
+                    <a class="linkedin-anchor-container" href="https://www.linkedin.com/in/brandonjhumphries/" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-container">
+                            <!-- <a href="https://www.linkedin.com/in/brandonjhumphries/" target="_blank" rel="noopener noreferrer"> -->
+                            <img src="img/linkedin.svg" alt="LinkedIn" class="linkedin-icon">
+                            <!-- </a> -->
+                        </div>
+                        <p class="contact-anchor-title">LinkedIn</p>
+                        <p class="contact-anchor-url">https://www.linkedin.com/in/brandonjhumphries/</p>
+                    </a>
+                    <div class="email-container">
+                        <a href="mailto:brandon.j.humphries@gmail.com">brandon.j.humphries@gmail.com</a>
+                    </div>
                 </div>
             </div>
         </footer>

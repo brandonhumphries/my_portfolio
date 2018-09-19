@@ -134,6 +134,16 @@ let createAnchor = (className, hrefContent, anchorContent) => {
     return anchor;
 };
 
+let createUrlContainer = (i) => {
+    let urlContainer = document.createElement('div');
+    urlContainer.classList.add('url-container-modal');
+    let demoUrl = createAnchor('demo-url', projects[i].demoUrl, 'Live Demo');
+    let githubUrl = createAnchor('github-url', projects[i].githubUrl, 'Github Repository');
+    urlContainer.appendChild(demoUrl);
+    urlContainer.appendChild(githubUrl);
+    return urlContainer;
+}
+
 let createDetailsList = (details) => {
     let detailList = document.createElement('ul');
     details.forEach(detail => {
@@ -173,23 +183,32 @@ let displayProject = (i) => {
     projectImageInformationContainer.classList.add('project-image-information-container-modal');
     let projectItem = document.createElement('div');
     projectItem.classList.add('project-item-modal');
+    let projectHeaderContainer = document.createElement('div');
+    projectHeaderContainer.classList.add('project-header-container');
     let projectHeader = createHeader('h3', 'project-header-modal', projects[i].caption);
+    let projectHeaderLine1 = document.createElement('div');
+    projectHeaderLine1.classList.add('project-header-line');
+    let projectHeaderLine2 = document.createElement('div');
+    projectHeaderLine2.classList.add('project-header-line');
     let projectInformationContainer = document.createElement('div');
     projectInformationContainer.classList.add('project-information-container-modal');
-    let urlContainer = document.createElement('div');
-    urlContainer.classList.add('url-container-modal');
-    let demoUrl = createAnchor('demo-url', projects[i].demoUrl, 'Live Demo');
-    let githubUrl = createAnchor('github-url', projects[i].githubUrl, 'Github Repository');
+    let urlContainer = createUrlContainer(i);
+    // urlContainer.classList.add('url-container-modal');
+    // let demoUrl = createAnchor('demo-url', projects[i].demoUrl, 'Live Demo');
+    // let githubUrl = createAnchor('github-url', projects[i].githubUrl, 'Github Repository');
     let projectImage = createImage('project-image-modal', projects[i].imageUrl, projects[i].caption);
     let projectDescription = document.createElement('p');
     projectDescription.classList.add('project-description-modal');
     projectDescription.textContent = projects[i].description;
     let projectDetailList = createDetailsList(projects[i].details);
-    projectItem.appendChild(projectHeader);
+    projectHeaderContainer.appendChild(projectHeaderLine1);
+    projectHeaderContainer.appendChild(projectHeader);
+    projectHeaderContainer.appendChild(projectHeaderLine2);
+    projectItem.appendChild(projectHeaderContainer);
     projectImageInformationContainer.appendChild(projectImage);
     projectItem.appendChild(projectImageInformationContainer);
-    urlContainer.appendChild(demoUrl);
-    urlContainer.appendChild(githubUrl);
+    // urlContainer.appendChild(demoUrl);
+    // urlContainer.appendChild(githubUrl);
     projectInformationContainer.appendChild(urlContainer);
     projectInformationContainer.appendChild(projectDescription);
     projectInformationContainer.appendChild(projectDetailList);
