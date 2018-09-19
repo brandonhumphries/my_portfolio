@@ -32,10 +32,10 @@ img {
     margin: 0;
     align-self: center;
 }
-.navigation-anchor-container {
+.navigation-anchors-container {
     display: flex;
 }
-.nav-anchor {
+.navigation-anchor-container {
     display: flex;
     align-items: center;
     border-style: solid;
@@ -50,7 +50,13 @@ img {
     align-items: center;
     /* text-align: center; */
     font-family: "Century Gothic";
-    background-color: rgba(243, 244, 244);
+    background-color: rgb(243, 244, 244);
+    text-decoration: none;
+    color: black;
+}
+.navigation-anchor {
+    text-decoration: none;
+    color: black;
 }
 .nav-anchor :hover {
     
@@ -78,7 +84,7 @@ img {
     width: 100%; */
     min-height: 100%;
     box-sizing: border-box;
-    padding-top: 4em;
+    /* padding-top: 4em; */
     /* padding: 0 1em; */
     /* display: flex;
     flex-direction: column;
@@ -112,7 +118,13 @@ img {
     text-align: center;
 }
 .about-me-container {
-    padding: 0 1em;
+    padding: 4em 1em 0 1em;
+}
+.about-me-paragraph {
+    margin-bottom: 0;
+}
+#project-section {
+    height: 2em;
 }
 .projects-section-container {
     display: flex;
