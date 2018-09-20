@@ -34,7 +34,9 @@ const projects = [
         description: 'Web application that allows users to search for recipes based on the limited ingredients they have on hand.',
         details: [
             'Spoonacular API retrieves ingredients that utilize the entered/saved ingredients.',
-            'Database stores user email and password, staple ingredients that the user usually has on hand, and recipes that are favorited by the user.'
+            'Database stores user email and password, staple ingredients that the user usually has on hand, and recipes that are favorited by the user.',
+            'Utilized PostgreSQL to query our database',
+            'JSON Web Tokens provided user authentication'
         ],
         projectTechnologies: [technologies.javascript, technologies.html, technologies.css, technologies.node, technologies.express, technologies.postgres, technologies.aws]
     }

@@ -320,6 +320,9 @@ img {
 .project-description-modal {
     margin: 0.5em 0;
 }
+.project-details-list-item {
+    margin: 0.4em 0;
+}
 .project-technologies-container {
     display: flex;
     flex-wrap: wrap;
@@ -461,6 +464,7 @@ img {
 }
 .contact-header {
     position: relative;
+    z-index: 1;
     bottom: 28px;
     margin: 0;
     padding-bottom: 0.2em;
@@ -601,6 +605,7 @@ img {
     .project-modal-container {
         left: 25%;
         width: 50%;
+        z-index: 2;
     }
     .icon-group-container {
         padding-left: 2em;
