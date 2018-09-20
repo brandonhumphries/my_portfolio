@@ -6,6 +6,7 @@ const technologies = {
     express: {caption: 'Express.js', url: 'img/technologies_icons/express-original.svg'},
     postgres: {caption: 'PostgreSQL', url: 'img/technologies_icons/postgresql-original.svg'},
     react: {caption: 'React', url: 'img/technologies_icons/react-original.svg'},
+    redux: {caption: 'Redux', url: 'img/technologies_icons/redux-original.svg'},
     python: {caption: 'Python', url: 'img/technologies_icons/python-original.svg'},
     jquery: {caption: 'jQuery', url: 'img/technologies_icons/jquery-original.svg'},
     git: {caption: 'git', url: 'img/technologies_icons/git-original.svg'},
