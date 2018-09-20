@@ -12,6 +12,9 @@ body {
 img {
     image-orientation: from-image;
 }
+.overflow-hidden {
+    overflow: hidden;
+}
 .navigation-menu {
     width: 100%;
     position: fixed;
@@ -355,23 +358,47 @@ img {
     background-color: rgba(184, 181, 181, 0.5);
 }
 .garden-photos-modal {
-    background-color: black;
+    background-color: rgb(243, 244, 244);
     display: flex;
     flex-direction: column;
 }
 .garden-photo-navigation-container {
     display: flex;
+    justify-content: space-around;
 }
 .garden-photos-header-container {
     display: flex;
 }
+.garden-photos-header {
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    flex: 2;
+    width: 25em;
+    border-radius: 7px;
+    border-bottom-style: solid;
+    text-align: center;
+    color: rgb(243, 244, 244);
+    background-color: rgb(86, 165, 172);
+}
+.garden-photos-header-line {
+    width: 100%;
+    height: 0.9em;
+    flex: 1;
+    border-bottom-style: solid;
+    color: rgb(86, 165, 172);
+}
 .garden-photos-modal-close-button {
-    background-color: white;
-    width: 2em;
-    height: 2em;
+    /* background-color: white; */
+    /* width: 2em;
+    height: 2em; */
     align-self: flex-end;
     margin-top: 0.5em;
     margin-right: 0.5em;
+    background-color: transparent;
+    border-style: none;
+    font-size: 1em;
+    padding: 0;
 }
 .garden-item {
     list-style: none;
@@ -384,25 +411,36 @@ img {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 75%;
+    height: 75%;
+    align-self: center;
 }
 .garden-photo {
     object-fit: contain;
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
 }
 .garden-photo-caption {
     text-align: center;
-    background-color: white;
+    background-color: rgb(243, 244, 244);
+    width: 10em;
+    align-self: center;
 }
 .next-image {
-    height: 2em;
+    /* height: 2em; */
     align-self: center;
-    background-color: white;
+    background-color: transparent;
+    border-style: none;
+    font-size: 2em;
+    padding: 0;
 }
 .previous-image {
-    height: 2em;
+    /* height: 2em; */
     align-self: center;
-    background-color: white;
+    background-color: transparent;
+    border-style: none;
+    font-size: 2em;
+    padding: 0;
 }
 .footer {
     width: 100%;
@@ -439,6 +477,19 @@ img {
     color: rgb(86, 165, 172);
     align-self: center;
 } */
+.name-header-footer {
+    margin: 0;
+    text-align: center;
+    color: rgb(102, 100, 100); 
+    /* padding: 0.25em 0 0 0; */
+}
+.developer-header-footer {
+    color: rgb(99, 126, 167);
+    font-style: oblique;
+    font-weight: lighter;
+    margin: 0;
+    text-align: center;
+}
 .icon-group-container {
     display: flex;
     flex-direction: column;
@@ -503,6 +554,9 @@ img {
         flex-direction: row;
         padding: 0.5em;
     }
+    .navigation-anchors-container {
+        margin-right: 1em;
+    }
     /* .main-body-container {
         padding-top: 3em;
     } */
@@ -512,6 +566,19 @@ img {
     }
     #project-section {
         height: 2em;
+    }
+    .garden-photo-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+    }
+    .garden-photo {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
     }
     .technologies-header {
         width: 18em;

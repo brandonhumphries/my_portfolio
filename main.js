@@ -74,12 +74,14 @@ let gardenI;
 
 let closeProjectModalButton = (event) => {
     event.preventDefault();
+    let body = document.querySelector('body');
     let projectModalBackground = document.querySelector('.project-modal-background');
     let projectModal = document.querySelector('.project-modal-container');
     let projectItemContainer = document.querySelector('.project-item-container-modal');
     let projectItem = document.querySelector('.project-item-modal');
     projectModal.classList.add('hidden');
     projectModalBackground.classList.add('hidden');
+    body.classList.remove('overflow-hidden');
     projectModal.removeChild(projectItem);
 };
 
@@ -88,6 +90,7 @@ projectModalCloseButton.addEventListener('click', closeProjectModalButton);
 
 let closeProjectModalBackground = (event) => {
     event.preventDefault();
+    let body = document.querySelector('body');
     let projectModal = document.querySelector('.project-modal-container');
     let projectModalBackground = document.querySelector('.project-modal-background');
     let projectItemContainer = document.querySelector('.project-item-container-modal');
@@ -95,6 +98,7 @@ let closeProjectModalBackground = (event) => {
     if (event.target === projectModalBackground) {
         projectModal.classList.add('hidden');
         projectModalBackground.classList.add('hidden');
+        body.classList.remove('overflow-hidden');
         projectModal.removeChild(projectItem);
     }
 };
@@ -175,6 +179,7 @@ let displayProjectTechnologies = (i) => {
 };
 
 let displayProject = (i) => {
+    let body = document.querySelector('body');
     let projectModalContainer = document.querySelector('.project-modal-container');
     let projectModalBackground = document.querySelector('.project-modal-background');
     let projectItemContainer = document.createElement('div');
@@ -219,6 +224,7 @@ let displayProject = (i) => {
     projectItem.appendChild(projectImageInformationContainer);
     projectModalContainer.appendChild(projectItem);
     displayProjectTechnologies(i);
+    body.classList.add('overflow-hidden');
     projectModalContainer.classList.remove('hidden');
     projectModalBackground.classList.remove('hidden');
 };
@@ -268,10 +274,12 @@ displayTechnologies();
 
 let closeGardenModalButton = (event) => {
     event.preventDefault();
+    let body = document.querySelector('body');
     let gardenImageModal = document.querySelector('.garden-photos-modal-container');
     let gardenItemContainer = document.querySelector('.garden-item-container');
     let gardenItem = document.querySelector('.garden-item');
     gardenImageModal.classList.add('hidden');
+    body.classList.remove('overflow-hidden');
     gardenItemContainer.removeChild(gardenItem);
 };
 
@@ -280,11 +288,13 @@ gardenModalCloseButton.addEventListener('click', closeGardenModalButton);
 
 let closeGardenModalBackground = (event) => {
     event.preventDefault();
+    let body = document.querySelector('body');
     let gardenImageModal = document.querySelector('.garden-photos-modal-container');
     let gardenItemContainer = document.querySelector('.garden-item-container');
     let gardenItem = document.querySelector('.garden-item');
     if (event.target === gardenImageModal) {
         gardenImageModal.classList.add('hidden');
+        body.classList.remove('overflow-hidden');
         gardenItemContainer.removeChild(gardenItem);
     }
 };
@@ -296,9 +306,11 @@ gardenModalCloseBackground.addEventListener('click', closeGardenModalBackground)
 let displayGardenImages = (event, i) => {
     event.preventDefault();
     gardenI = 0;
+    let body = document.querySelector('body');
     let gardenImageModal = document.querySelector('.garden-photos-modal-container');
     let gardenItemContainer = document.querySelector('.garden-item-container');
     gardenImageModal.classList.remove('hidden');
+    body.classList.add('overflow-hidden');
     let gardenImageContainer = document.createElement('div');
     gardenImageContainer.classList.add('garden-photo-container');
     let gardenImage = createImage('garden-photo', gardenImages[gardenI].url, gardenImages[gardenI].caption);
