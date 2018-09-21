@@ -29,11 +29,14 @@ img {
 .navigation-cog-header-container {
     display: flex;
     margin-right: 0.5em;
+    margin-top: 0.25em;
 }
 .cog-image {
-    width: 2.5em;
-    height: 2.5em;
+    width: 1.5em;
+    height: 1.5em;
     object-fit: contain;
+    align-self: center;
+    margin: 0 0.5em;
 }
 .navigation-header {
     color: white;
@@ -127,15 +130,19 @@ img {
     color: rgb(99, 126, 167);
     font-style: oblique;
     font-weight: lighter;
-    margin: 0 0 0.5em 0;
+    margin: 0;
     /* padding-left: 1.5em; */
     text-align: center;
 }
 .about-me-container {
+    display: flex;
+    flex-direction: column;
     padding: 4em 1em 0 1em;
 }
 .about-me-paragraph {
     margin-bottom: 0;
+    width: 80%;
+    align-self: center;
 }
 #project-section {
     height: 3em;
@@ -154,10 +161,10 @@ img {
 .projects-header {
     margin: 0;
     margin-bottom: 0.5em;
-    padding-bottom: 0.2em;
+    padding: 0.2em 0;
     width: 7em;
     border-radius: 7px;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid; */
     text-align: center;
     color: rgb(243, 244, 244);
     background-color: rgb(86, 165, 172);
@@ -212,10 +219,10 @@ img {
 .technologies-header {
     margin: 0;
     /* margin-bottom: 0.5em; */
-    padding-bottom: 0.2em;
+    padding: 0.2em 0;
     width: 28em;
     border-radius: 7px;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid; */
     text-align: center;
     color: rgb(243, 244, 244);
     background-color: rgb(86, 165, 172);
@@ -290,10 +297,10 @@ img {
     margin-bottom: 0.5em; */
     margin: 0;
     /* margin-bottom: 0.5em; */
-    padding-bottom: 0.2em;
+    padding: 0.2em 0;
     width: 22em;
     border-radius: 7px;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid; */
     text-align: center;
     color: rgb(243, 244, 244);
     background-color: rgb(86, 165, 172);
@@ -380,7 +387,7 @@ img {
     flex: 8;
     width: 25em;
     border-radius: 7px;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid; */
     text-align: center;
     color: rgb(243, 244, 244);
     background-color: rgb(86, 165, 172);
@@ -467,7 +474,7 @@ img {
     z-index: 1;
     bottom: 28px;
     margin: 0;
-    padding-bottom: 0.2em;
+    padding: 0.2em 0;
     /* width: 30em; */
     width: 12em;
     border-radius: 7px;
@@ -499,9 +506,9 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: center; */
-    padding-left: 0.2em;
-    margin-bottom: 1.5em;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0.5em;
     /* overflow-x: auto; */
 }
 .icon-container {
@@ -518,7 +525,7 @@ img {
 }
 .github-anchor-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin: 0.5em 0;
     text-decoration: none;
     color: black;
@@ -526,10 +533,10 @@ img {
 }
 .linkedin-anchor-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin: 0.5em 0;
-    text-decoration: none;
-    color: black;
+    /* text-decoration: none; */
+    /* color: black; */
     flex-wrap: wrap;
     /* overflow-x: auto; */
 }
@@ -540,6 +547,7 @@ img {
 }
 .email-container {
     display: flex;
+    margin: 0.5em 0;
 }
 .hidden {
     display: none;
@@ -607,9 +615,9 @@ img {
         width: 50%;
         z-index: 2;
     }
-    .icon-group-container {
+    /* .icon-group-container {
         padding-left: 2em;
-    }
+    } */
     .contact-anchor-url {
         font-size: 1em;
     }
