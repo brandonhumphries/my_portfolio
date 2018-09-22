@@ -327,6 +327,10 @@ img {
 .project-description-modal {
     margin: 0.5em 0;
 }
+.project-detail-list {
+    width: 90%;
+    box-sizing: border-box;
+}
 .project-details-list-item {
     margin: 0.4em 0;
 }

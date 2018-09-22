@@ -134,6 +134,7 @@ let createUrlContainer = (i) => {
 
 let createDetailsList = (details) => {
     let detailList = document.createElement('ul');
+    detailList.classList.add('project-detail-list');
     details.forEach(detail => {
         let listItem = document.createElement('li');
         listItem.classList.add('project-details-list-item');
