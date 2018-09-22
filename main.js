@@ -9,7 +9,7 @@ const technologies = {
     redux: {caption: 'Redux.js', url: 'img/technologies_icons/redux-original.svg'},
     python: {caption: 'Python', url: 'img/technologies_icons/python-original.svg'},
     jquery: {caption: 'jQuery', url: 'img/technologies_icons/jquery-original.svg'},
-    git: {caption: 'git', url: 'img/technologies_icons/git-original.svg'},
+    git: {caption: 'Git', url: 'img/technologies_icons/git-original.svg'},
     aws: {caption: 'Amazon Web Services', url: 'img/technologies_icons/amazonwebservices-original.svg'},
 };
 
