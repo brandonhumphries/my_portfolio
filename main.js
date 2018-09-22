@@ -23,8 +23,8 @@ const projects = [
         details: [
             'Spoonacular API retrieves ingredients that utilize the entered/saved ingredients.',
             'Database stores user email and password, staple ingredients that the user usually has on hand, and recipes that are favorited by the user.',
-            'Utilized PostgreSQL to query our database.',
-            'JSON Web Tokens provided user authentication.'
+            'Utilizes PostgreSQL to query the database.',
+            'JSON Web Tokens provide user authentication.'
         ],
         projectTechnologies: [technologies.javascript, technologies.html, technologies.css, technologies.node, technologies.express, technologies.postgres, technologies.aws]
     },
@@ -35,7 +35,7 @@ const projects = [
         githubUrl: 'https://github.com/brandonhumphries/coffeeology',
         description: 'Web app targeting users looking to learn about the craft of coffee and replace their expensive coffeeshop coffee.',
         details: [
-            'Utilized the Blogger API to retrieve coffee-related blog posts.',
+            'Utilizes the Blogger API to retrieve coffee-related blog posts.',
             'The EventBrite API retrieves coffee events around the Atlanta area.',
             'Local Storage keeps track of returning users and their survey results.'
         ],
