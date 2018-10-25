@@ -15,6 +15,20 @@ const technologies = {
 
 const projects = [
     {
+        caption: 'The Local Experience',
+        imageUrl: 'img/the_local_experience/the-local-experience.png',
+        demoUrl: 'https://thelocalexperience.club',
+        githubUrl: 'https://github.com/MitchGuth/theLocalExperience',
+        description: 'Web app where users can capture and share experiences by uploading a photo of their experience, a description that describes their experience, and a location tag to allow others to have their own experience at that location.',
+        details: [
+            `Single Page Application built with React and Redux on the front end.`,
+            `The Geolocation API is used to obtain the user's coordinates when they upload a photo.` ,
+            `Utilized Multer NPM for image uploads and Sharp NPM to auto-rotate the image based on its intrinsic orientation.`,
+            `The Google Maps API displays user contributions as markers on the map.`
+        ],
+        projectTechnologies: [technologies.javascript, technologies.html, technologies.css, technologies.react, technologies.redux, technologies.node, technologies.express, technologies.postgres, technologies.aws]
+    },
+    {
         caption: 'in your fridge', 
         imageUrl: 'img/inyourfridge/Fridge 920.PNG', 
         demoUrl: 'http://www.inyourfridge.co',
