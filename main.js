@@ -30,7 +30,7 @@ const projects = [
     },
     {
         caption: 'in your fridge', 
-        imageUrl: 'img/inyourfridge/Fridge 920.PNG', 
+        imageUrl: 'img/inyourfridge/in-your-fridge.png', 
         demoUrl: 'http://www.inyourfridge.co',
         githubUrl: 'https://github.com/hglasser/In-Your-Fridge',
         description: 'Web application that allows users to search for recipes based on the limited ingredients they have on hand.',
